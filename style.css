@@ -46,9 +46,12 @@ nav ul li a {
     padding: 4rem 0;
 }
 
-.login-form {
-    width: 300px;
+.auth-container {
+    width: 350px;
     margin: 2rem auto;
+}
+
+.auth-form {
     padding: 2rem;
     background-color: white;
     border-radius: 5px;
@@ -65,11 +68,13 @@ label {
 }
 
 input[type="text"],
+input[type="email"],
 input[type="password"] {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 3px;
+    box-sizing: border-box;
 }
 
 button {
@@ -100,4 +105,19 @@ button:disabled {
     color: #666;
     cursor: not-allowed;
     opacity: 0.6;
+}
+
+.auth-switch {
+    text-align: center;
+    margin-top: 1rem;
+    color: #666;
+}
+
+.auth-switch a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
 }

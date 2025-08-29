@@ -24,19 +24,52 @@
             <p>This is a simple landing page created by an AI assistant.</p>
         </section>
 
-        <section class="login-form">
-            <h2>Login</h2>
-            <form>
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <button type="submit" id="login-btn">Login</button>
-            </form>
+        <section class="auth-container">
+            <!-- Login Form -->
+            <div class="auth-form" id="login-form">
+                <h2>Login</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="login-username">Username</label>
+                        <input type="text" id="login-username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" required>
+                    </div>
+                    <button type="submit" id="login-btn">Login</button>
+                </form>
+                <p class="auth-switch">
+                    Don't have an account? <a href="#" id="show-register">Register here</a>
+                </p>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="auth-form" id="register-form" style="display: none;">
+                <h2>Register</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="register-username">Username</label>
+                        <input type="text" id="register-username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm-password">Confirm Password</label>
+                        <input type="password" id="register-confirm-password" name="confirm-password" required>
+                    </div>
+                    <button type="submit" id="register-btn">Register</button>
+                </form>
+                <p class="auth-switch">
+                    Already have an account? <a href="#" id="show-login">Login here</a>
+                </p>
+            </div>
         </section>
     </main>
 
